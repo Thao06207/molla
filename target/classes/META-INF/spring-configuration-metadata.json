@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "storage",
+      "type": "com.example.config.StorageProperties",
+      "sourceType": "com.example.config.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "storage.location",
+      "type": "java.lang.String",
+      "sourceType": "com.example.config.StorageProperties"
+    }
+  ],
+  "hints": []
+}
