@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>springboot</artifactId>
 	<version>1.0</version>
+	<packaging>war</packaging>
 	<name>springboot</name>
 	<description>Spring boot project for Spring Boot</description>
 	<properties>

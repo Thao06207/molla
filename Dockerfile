@@ -7,11 +7,11 @@
 # EXPOSE 8080
 # ENTRYPOINT ["java","-jar","demo.jar"]
 
-FROM maven:3.8.3-openjdk-17-slim
+FROM maven:3.8.5-openjdk-17
 
 RUN mvn clean package -DskipTests
 
-FROM openjdk:17.0.1-jdk-slim-bullseye
+FROM openjdk:17.0.1-jdk-slim
 
 COPY --from=build /target/springboot-1.0.war /springboot.war
 EXPOSE 8080
