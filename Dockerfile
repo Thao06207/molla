@@ -13,6 +13,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim-bullseye
 
-COPY --from=build /target/spring-boot-0.0.1-SNAPSHOT.jar /spring-boot.jar
+COPY --from=build /target/springboot-1.0.war /springboot.war
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/spring-boot.jar"]
+ENTRYPOINT ["java","-war","/spring-boot.war"]
